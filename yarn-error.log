@@ -1,0 +1,63 @@
+Arguments: 
+  D:\nvm\nodejs\node.exe D:\Program Files\nodejs\node_global\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\HASEE\AppData\Roaming\npm;node_global\node_modules\cnpm;node_global\node_modules;node_global;D:\Program Files\MongoDB\Server\4.1\bin;D:\Program Files\nvm;12.16.1\;D:\nvm\v10.13.0;D:\nvm\v10.19.0;D:\nvm\v12.16.2;D:\Program Files\nodejs\node_global\node_modules\cnpm\bin\cnpm;D:\nvm\v9.0.0;D:\nvm;D:\nvm\nodejs;D:\Program Files\nodejs\node_global;C:\Program Files (x86)\Google\Chrome\Application;C:\Python27;D:\Program Files\Git\cmd;;C:\Users\HASEE\AppData\Local\Programs\Microsoft VS Code\bin;D:\Program Files\Microsoft VS Code\bin;D:\nvm;D:\nvm\nodejs;D:\Program Files\nodejs\node_global
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.6.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\HASEE\AppData\Local\Yarn\Cache\v6\npm-@ant-design-icons-4.6.2-290f2e8cde505ab081fda63e511e82d3c48be982-integrity\node_modules\@ant-design\icons\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "umi dev",
+      "build": "umi build",
+      "postinstall": "umi generate tmp",
+      "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+      "test": "umi-test",
+      "test:coverage": "umi-test --coverage"
+    },
+    "gitHooks": {
+      "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+      "*.{js,jsx,less,md,json}": [
+        "prettier --write"
+      ],
+      "*.ts?(x)": [
+        "prettier --parser=typescript --write"
+      ]
+    },
+    "dependencies": {
+      "@ant-design/pro-layout": "^6.5.0",
+      "@umijs/preset-react": "1.x",
+      "umi": "^3.4.8"
+    },
+    "devDependencies": {
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "@umijs/test": "^3.4.8",
+      "lint-staged": "^10.0.7",
+      "prettier": "^2.2.0",
+      "react": "17.x",
+      "react-dom": "17.x",
+      "typescript": "^4.1.2",
+      "yorkie": "^2.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
